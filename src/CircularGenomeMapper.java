@@ -11,8 +11,7 @@ public class CircularGenomeMapper implements CgviewConstants{
 	public static Cgview cgview;
 
 	public static void main(String args[]) throws IOException, Exception {
-		
-        cgview = new Cgview(2766);
+
         readData();
         
         // map characteristics
@@ -44,7 +43,8 @@ public class CircularGenomeMapper implements CgviewConstants{
 				geneName = scan.nextLine().trim();
 			}
 			if (next.equals("LOCUS")) {
-				geneLength = returnGeneLength(scan);		
+				geneLength = returnGeneLength(scan);
+				cgview = new Cgview(geneLength);
 			}
 			if (next.equals("FEATURES")) {
 				createFeatures(scan);
