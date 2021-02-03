@@ -1,5 +1,7 @@
 # Circular Genome Map of Tomato Curly Stunt Virus
 
+![genome map](CircularGenomeMap.png)
+
 ## Initial Research
 Before attempting to map this genome file, I first did research on the features of a Genbank file and what they mean, as well as on circular genome maps. I learned about how these maps are used for the visualization of the many genes that make up a genome squence of an organism. Next, I searched for existing libraries that map genomic data into a circular genome map. I found the CGView Java package and decided to use it because of the flexibility in map features and high quality maps it can generate. 
 
